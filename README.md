@@ -24,12 +24,13 @@ Project 'Persistencia' has the following package references
     con las credenciales de la instancia local de su cliente MySQl
 
 
-2. ejecutar los comandos
+2. ejecutar los siguientes comandos para crear BD y posteriormente cerrar el proceso en consola 
 ```
 dotnet build
 dotnet ef migrations add MigrationTest --project ./Persistencia/ --startup-project ./API/ --output-dir ./Data/Migrations
+dotnet run
 ```
-3. Crear los registros de los roles basicos necesarios en la base de datos. 
+3. Crear los registros de los roles basicos necesarios para la correcta ejecucion de la API. 
 
 ```
 INSERT INTO pruebaudes.roles (Descripcion) VALUES
